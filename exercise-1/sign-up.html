@@ -3,41 +3,68 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Slick</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Slick</title>
 
-    <!-- Firebase -->
-    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
 
-    <!-- jQuery, Materialize -->
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- jQuery, Materialize -->
+	<script src="https://code.jquery.com/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css" />
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.js"></script>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+	<!-- load bootstrap -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Custom files -->
-    <script type="text/javascript" src="js/authenticate.js"></script>
-    <link rel="stylesheet" href="css/main.css" />
+	<!-- Custom files -->
+	<script type="text/javascript" src="js/authenticate.js"></script>
+	<link rel="stylesheet" href="css/main.css" />
 
 </head>
 
 <body>
-    <nav>
-        <div class="nav-wrapper">
-            <h2>Slick</h2>
+	<nav>
+		<div class="nav-wrapper">
+			<h2>Slick</h2>
+		</div>
+	</nav>
+	<section class="container">
+		<h3>Sign up for an Account</h3>
+		<!-- Input your form here -->     
+		<div class="row">
+            <form class="col s12 authenticate" id="sign-up">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Password</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="display-name" type="text" class="validate">
+                        <label for="display-name">Display Name</label>
+                    </div>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+            </form>
         </div>
-    </nav>
-    <section class="container">
-        <h3>Sign up for an Account</h3>
-        <!-- Input your form here -->
-
         <div>
-            <!-- Paragraph + Link to sign-in form -->
+            <!-- Paragrap + Link to sign-in form -->
+            <p class="sign-in"><em>Already have an account?</em><a href="sign-in.html"><button class="btn waves-effect waves-light">Sign In</button></a></p>
         </div>
-    </section>
+	</section>
 </body>
 
 </html>
